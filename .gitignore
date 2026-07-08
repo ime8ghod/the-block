@@ -4,3 +4,10 @@ node_modules/
 .DS_Store
 *.log
 *.bak
+
+# Xcode
+DerivedData/
+build/
+xcuserdata/
+*.xcuserstate
+*.xcuserdata/
