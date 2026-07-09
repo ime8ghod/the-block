@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct TheBlockApp: App {
+    private let repository: VehicleRepository = BundledVehicleRepository()
+    private let biddingEngine = BiddingEngine()
+    private let ticker = Ticker()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            InventoryView(
+                repository: repository,
+                biddingEngine: biddingEngine,
+                ticker: ticker
+            )
+            .task { await ticker.start() }
         }
     }
 }
