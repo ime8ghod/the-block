@@ -4,7 +4,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/the-block.git
+   git clone https://github.com/ime8ghod/the-block.git
    cd the-block
 2. Open the project in Xcode.
 3. Select the TheBlock scheme.
